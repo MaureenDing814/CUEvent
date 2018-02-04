@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.cuevent.EventPage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/poster"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="International Cultural Winter Banquet"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#174785"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 12/10/2017         Time: 5 pm - 7 pm "
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:  Dinning Hall, Teachers College, Columbia University"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host: Future China Initialtive"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <LinearLayout
+        android:layout_width="189dp"
+        android:layout_height="29dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes: 20019"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Introduction"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to enjoy the winter time? Come and try different cultural food (including American Thanksgiving cuisine), listen to diverse cultural music, learn about both in details, and more importantly, make new friends from another culture."
+        android:layout_margin="10dp"
+        android:textSize="11sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Host"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/host1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FCI is an organization that supports the academic success, career development, and cultural leadership of Chinese Columbia students and scholars."
+            android:layout_margin="10dp"
+            android:textSize="11sp"
+            android:textColor="#626262"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good good event! I love red bean soup!"
+            android:layout_margin="10dp"
+            android:textSize="11sp"
+            android:textColor="#626262"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:onClick="success"/>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

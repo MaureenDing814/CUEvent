@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.cuevent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EventPage" />
+        <activity android:name=".CreateEvent" />
+        <activity android:name=".EventPage2" />
+        <activity android:name=".EventPage3" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".Profile" />
+        <activity android:name=".EventList" />
+        <activity android:name=".EventPage4" />
+        <activity android:name=".MusicList" />
+        <activity android:name=".Theater" />
+        <activity android:name=".Volunteer" />
+        <activity android:name=".Workshop"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.cuevent.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9bddff"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="10pt"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_search_grey_500_24dp"/>
+
+            <EditText
+                android:layout_weight="6"
+                android:layout_width="0pt"
+                android:layout_height="wrap_content"
+                android:hint="Search Events"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_weight="2"
+                android:layout_width="0pt"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="5pt"
+                android:text="Search" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35pt"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="lecture">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/lecture"
+            android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecture"
+                android:textSize="10sp"
+                android:textColor="#0038a8"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="music">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/music"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:textSize="10sp"
+                android:textColor="#0038a8"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="theater">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/theater"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theater"
+                android:textSize="10sp"
+                android:textColor="#0038a8"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="volunteer">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/volunteer"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volunteer"
+                android:textColor="#0038a8"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:onClick="workshop">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/workshop"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workshop"
+                android:textColor="#0038a8"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#cde4ef"
+        android:onClick="event">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/poster"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:text="Future China Initialtive"
+            android:textColor="#717171"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="3dp"
+            android:text="International Cultural Winter Banquet"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="3dp"
+            android:text="12/02/2017    Teachers College Dinning Hall"
+            android:textColor="#717171"
+            android:textSize="12sp"
+            android:paddingBottom="5dp"
+            />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="#cde4ef"
+                android:onClick="event1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/poster1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="Society for International Education"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Super Duper Happy Hour"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="11/30/2017    Publique"
+                    android:textColor="#717171"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="#cde4ef"
+                android:onClick="event2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/poster2"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="Chinese Students Club"
+                    android:textColor="#717171"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Taste of China"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="12/09/2017    Diana Event Oval"
+                    android:textColor="#717171"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

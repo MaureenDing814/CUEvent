@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.cuevent.EventPage2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/poster1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Super Duper Happy Hour"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#174785"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 12/1/2017         Time: 10 pm - 12 am "
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:  Publique, 1023 Broadway, New York, NY, 10021"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host: Society for International Education"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="#626262"/>
+
+    <LinearLayout
+        android:layout_width="189dp"
+        android:layout_height="29dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Likes: 30"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:textColor="#626262"/>
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Introduction"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final season, you need a break! Come and join us for an open bar night. Please remember to bring your ID!"
+        android:layout_margin="10dp"
+        android:textSize="11sp"
+        android:textColor="#626262"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Host"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/host2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Society for International Education is a student-based organization at Teachers College, the Graduate School of Education at Columbia University. The goal of SIE is to promote an academic, professional, and social network for students and alumni/ae within the communities of Teachers College."
+            android:layout_margin="10dp"
+            android:textSize="11sp"
+            android:textColor="#626262"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#75aadb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#75aadb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I need more beautiful girls."
+            android:layout_margin="10dp"
+            android:textSize="11sp"
+            android:textColor="#626262"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:onClick="success"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

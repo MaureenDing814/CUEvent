@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CU Event</string>
+    <string name="register">Register here <a href="http://ec2-54-205-49-193.compute-1.amazonaws.com/"></a></string>
+</resources>
